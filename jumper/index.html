@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="icon" href="img/icon.svg">
+    <title>Jumper</title>
+</head>
+
+<body>
+<div class="page">
+    <header>
+        <h1>JUMPER</h1>
+    </header>
+    <div class="component">
+        <div>
+            <img src="img/coin.png" class="rotateCoin" alt="rotate coin image"/>
+
+        </div>
+        <main>
+            <h2>Edit character</h2>
+            <form action="game.html">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" minlength="3" maxlength="15" pattern="[A-Za-z]{2,15}"
+                       placeholder="Stickman" autofocus required><br><br>
+
+                <label for="shot1">
+                    <input type="radio" class="shot" name="shot" id="shot1" value="black" checked>
+                    <img src="img/shot.png" class="shotImg" width="64" height="64" alt="shot"/>
+                </label>
+
+                <label for="shot2">
+                    <input type="radio" class="shot" name="shot" id="shot2" value="blue">
+                    <img src="img/shot3.png" class="shotImg" width="64" height="64" alt="shot"/>
+                </label>
+
+                <label for="shot3">
+                    <input type="radio" class="shot" name="shot" id="shot3" value="red">
+                    <img src="img/shot4.png" class="shotImg" width="64" height="64" alt="shot"/>
+                </label>
+
+                <label for="shot4">
+                    <input type="radio" class="shot" name="shot" id="shot4" value="green">
+                    <img src="img/shot2.png" class="shotImg" width="64" height="64" alt="shot"/>
+                </label>
+
+                <br/>
+                <br/>
+
+                <label for="character1">
+                    <input type="radio" class="character" name="character" id="character1" value="black" checked>
+                    <img src="img/stand.png" class="charImg" width="128" height="128" alt="black stickman"/>
+                </label>
+
+                <label for="character2">
+                    <input type="radio" class="character" name="character" id="character2" value="blue">
+                    <img src="img/standBlue.png" class="charImg" width="128" height="128" alt="blue stickman"/>
+                </label>
+
+                <label for="character3">
+                    <input type="radio" class="character" name="character" id="character3" value="red">
+                    <img src="img/standRed.png" class="charImg" width="128" height="128" alt="red stickman"/>
+                </label>
+
+                <label for="character4">
+                    <input type="radio" class="character" name="character" id="character4" value="green">
+                    <img src="img/standGreen.png" class="charImg" width="128" height="128" alt="green stickman"/>
+                </label>
+                <br/>
+                <br/>
+                <input onclick="store()" type="submit" id="submit" value="Start game"/>
+            </form>
+        </main>
+        <div>
+            <img src="img/coin.png" class="rotateCoin" alt="rotate coin image"/>
+        </div>
+    </div>
+    <footer>
+        <p>Bures&copy;2022</p>
+    </footer>
+</div>
+
+<script src="js/saveParams.js"></script>
+<script src="js/loadLastSettings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#deathImage{
+    height: 50vh;
+    width: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+    position: relative;
+    animation-name: movePicture;
+    animation-duration: 8s;
+}
+
+@keyframes movePicture {
+    0%   {left:0;}
+    25%  {left:-300px;}
+    50%  {left:0;}
+    75%  {left:300px;}
+    100% {left:0;}
+}

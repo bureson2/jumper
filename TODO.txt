@@ -1,0 +1,7 @@
+Okecat co netreba
+Dokumentace
+Cypress - git
+Media queries pro index, gameOver a gameWon - muzu skipnout
+Pokročilé API
+Otestovat nasazení na Heroku
+.

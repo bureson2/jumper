@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/endgameWin.css">
+    <link rel="icon" href="img/icon.svg">
+    <title>Jumper</title>
+</head>
+<body>
+<audio autoplay="autoplay">
+    <source src="music/win.mp3" />
+</audio>
+<div class="page">
+    <header>
+        <h1>YOU WIN</h1>
+    </header>
+    <div class="component">
+        <div></div>
+        <main class="center">
+            <img id="winImage" src="img/wall3.jpg" alt="happy winning Stickman"/>
+            <br />
+            <br />
+            <form action="index.html" class="center">
+                <h2 id="nickname">Stickman:&ensp;</h2>
+                <h2 id="score">Your score:&ensp;</h2>
+
+                <button type="submit" id="submit" value="Start game" autofocus >Start new game</button>
+            </form>
+            <script>
+                if(localStorage.getItem("nickname")) {
+                    document.getElementById("nickname").innerText += localStorage.getItem("nickname");
+                }
+                if(localStorage.getItem("score")) {
+                    document.getElementById("score").innerText += localStorage.getItem("score");
+                }
+            </script>
+        </main>
+        <div></div>
+    </div>
+    <footer>
+        <p>Bures&copy;2022</p>
+    </footer>
+</div>
+</body>
+</html>

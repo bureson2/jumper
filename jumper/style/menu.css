@@ -1,0 +1,129 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.page{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page header{
+    color: white;
+    /*background: black url("../img/wall3.jpg") no-repeat center;*/
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.page .component{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.page .component div{
+    perspective: 500px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    padding: 1em;
+}
+
+.page main{
+    flex: 1;
+    border-style: solid;
+    border-width: 5px;
+    border-color: darkgoldenrod;
+    border-radius: 25px;
+    background: aliceblue;
+    padding: 1em;
+}
+.page footer{
+    background: black;
+    color: white;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    position: relative;
+    background: black;
+    border: 0;
+    padding: 14px 42px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+    letter-spacing: .2em;
+    box-shadow: 0 8px 32px #232323;
+    transition: all .2s ease;
+}
+
+#submit:hover{
+    background: darkgoldenrod;
+}
+
+.shot:hover{
+    background: darkgoldenrod;
+}
+
+img.charImg:hover{
+    background: rgba(222, 163, 16, 0.62);
+    border-radius: 5px;
+}
+
+img.shotImg:hover{
+    background: rgba(222, 163, 16, 0.62);
+    border-radius: 5px;
+}
+
+.rotateCoin{
+    width: 200px;
+    height: 200px;
+    transform: rotateY(45deg);
+    animation: rotateAnimation 1s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {transform: rotateY(45deg);}
+    to {transform: rotateY(225deg);}
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid black;
+    border-radius: 5px;
+}
+
+h1{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 80px;
+}

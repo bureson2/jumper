@@ -1,0 +1,42 @@
+let url = 'http://localhost:63342/jumper/jumper/index.html?_ijt=34ksif82hgqi107ebp0ah85h0i&_ij_reload=RELOAD_ON_SAVE'
+
+describe('The game is started and finished', () => {
+    it('successfully loads, game starts and player go on map', () => {
+        cy.visit(url)
+        cy.get('#nickname').type('Hero')
+        cy.get('#submit').click()
+
+        cy.get('body').trigger('keydown', { keyCode: 76 })
+        cy.get('body').trigger('keydown', { keyCode: 76 })
+        cy.get('body').trigger('keydown', { keyCode: 68 })
+        cy.wait(1000)
+        cy.get('body').trigger('keyup', { keyCode: 68 })
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.get('body').trigger('keydown', { keyCode: 68 })
+        cy.wait(1050)
+        cy.get('body').trigger('keyup', { keyCode: 68 })
+        cy.get('body').trigger('keydown', { keyCode: 76 })
+        cy.get('body').trigger('keydown', { keyCode: 76 })
+        cy.get('body').trigger('keydown', { keyCode: 68 })
+        cy.wait(1700)
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.wait(1600)
+        cy.get('body').trigger('keydown', { keyCode: 76 })
+        cy.get('body').trigger('keydown', { keyCode: 76 })
+        cy.wait(1500)
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.wait(4000)
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        for(let i = 0; i < 20; i++){
+            cy.get('body').trigger('keydown', { keyCode: 76 })
+        }
+        cy.wait(100)
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.get('body').trigger('keydown', { keyCode: 87 })
+        cy.wait(500)
+        cy.get('body').trigger('keyup', { keyCode: 68 })
+    })
+})
