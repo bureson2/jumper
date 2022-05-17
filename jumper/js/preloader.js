@@ -51,3 +51,5 @@ const shotImageBlue = document.createElement("img");
 shotImageBlue.src = "./img/shot3.png/";
 const shotImageGreen = document.createElement("img");
 shotImageGreen.src = "./img/shot2.png/";
+
+setTimeout(10000)
