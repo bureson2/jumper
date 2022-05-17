@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script language = "JavaScript">
+    function preloader()
+    {
+        window.setTimeout(1000)
+    }
+
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +17,7 @@
     <link rel="icon" href="img/icon.svg">
 </head>
 
-<body>
+<body onLoad="javascript:preloader()">
 <audio autoplay="autoplay">
     <source src="music/themeMusic.mp3" />
 </audio>
