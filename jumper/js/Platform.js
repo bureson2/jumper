@@ -1,7 +1,7 @@
 const platformImage = document.createElement("img");
-platformImage.src = "./img/platform.png/";
+platformImage.src = "./img/platform.png";
 const goalImage = document.createElement("img");
-goalImage.src = "./img/goal.png/";
+goalImage.src = "./img/goal.png";
 
 export default class Platform {
     constructor({x, y}) {

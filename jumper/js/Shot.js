@@ -1,11 +1,11 @@
 let shotImage = document.createElement("img");
-shotImage.src = "./img/shot.png/";
+shotImage.src = "./img/shot.png";
 let shotImageRed = document.createElement("img");
-shotImageRed.src = "./img/shot4.png/";
+shotImageRed.src = "./img/shot4.png";
 let shotImageBlue = document.createElement("img");
-shotImageBlue.src = "./img/shot3.png/";
+shotImageBlue.src = "./img/shot3.png";
 let shotImageGreen = document.createElement("img");
-shotImageGreen.src = "./img/shot2.png/";
+shotImageGreen.src = "./img/shot2.png";
 
 // setted by local storage picked value
 function setShotImage(){

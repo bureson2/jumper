@@ -8,17 +8,17 @@ import GenericObject from "./GenericObject.js";
 
 // image definition
 const backgroundImage = document.createElement("img");
-backgroundImage.src = "./img/back.png/";
+backgroundImage.src = "./img/back.png";
 const hillImage = document.createElement("img");
-hillImage.src = "./img/hills.png/";
+hillImage.src = "./img/hills.png";
 const standImage = document.createElement("img");
-standImage.src = "./img/stand.png/";
+standImage.src = "./img/stand.png";
 let shotImage = document.createElement("img");
-shotImage.src = "./img/shot.png/";
+shotImage.src = "./img/shot.png";
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
 const goalImage = document.createElement("img");
-goalImage.src = "./img/goal.png/";
+goalImage.src = "./img/goal.png";
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;

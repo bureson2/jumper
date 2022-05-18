@@ -1,31 +1,31 @@
 // Black character
 let runRightImage = document.createElement("img");
-runRightImage.src = "./img/spriteRunRight.png/";
+runRightImage.src = "./img/spriteRunRight.png";
 let runLefttImage = document.createElement("img");
-runLefttImage.src = "./img/spriteRunLeft.png/";
+runLefttImage.src = "./img/spriteRunLeft.png";
 let standImage = document.createElement("img");
-standImage.src = "./img/stand.png/";
+standImage.src = "./img/stand.png";
 // Blue character
 let runRightBlueImage = document.createElement("img");
-runRightBlueImage.src = "./img/spriteRunRightBlue.png/";
+runRightBlueImage.src = "./img/spriteRunRightBlue.png";
 let runLeftBlueImage = document.createElement("img");
-runLeftBlueImage.src = "./img/spriteRunLeftBlue.png/";
+runLeftBlueImage.src = "./img/spriteRunLeftBlue.png";
 let standBlueImage = document.createElement("img");
-standBlueImage.src = "./img/standBlue.png/";
+standBlueImage.src = "./img/standBlue.png";
 // Red character
 let runRightRedImage = document.createElement("img");
-runRightRedImage.src = "./img/spriteRunRightRed.png/";
+runRightRedImage.src = "./img/spriteRunRightRed.png";
 let runLeftRedImage = document.createElement("img");
-runLeftRedImage.src = "./img/spriteRunLeftRed.png/";
+runLeftRedImage.src = "./img/spriteRunLeftRed.png";
 let standRedImage = document.createElement("img");
-standRedImage.src = "./img/standRed.png/";
+standRedImage.src = "./img/standRed.png";
 // Green character
 let runRightGreenImage = document.createElement("img");
-runRightGreenImage.src = "./img/spriteRunRightGreen.png/";
+runRightGreenImage.src = "./img/spriteRunRightGreen.png";
 let runLefttGreenImage = document.createElement("img");
-runLefttGreenImage.src = "./img/spriteRunLeftGreen.png/";
+runLefttGreenImage.src = "./img/spriteRunLeftGreen.png";
 let standGreenImage = document.createElement("img");
-standGreenImage.src = "./img/standGreen.png/";
+standGreenImage.src = "./img/standGreen.png";
 
 
 

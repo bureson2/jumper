@@ -1,21 +1,21 @@
 // Basic standing picture
 let standImage = document.createElement("img");
-standImage.src = "./img/stand.png/";
+standImage.src = "./img/stand.png";
 let standBlueImage = document.createElement("img");
-standBlueImage.src = "./img/standBlue.png/";
+standBlueImage.src = "./img/standBlue.png";
 let standRedImage = document.createElement("img");
-standRedImage.src = "./img/standRed.png/";
+standRedImage.src = "./img/standRed.png";
 let standGreenImage = document.createElement("img");
-standGreenImage.src = "./img/standGreen.png/";
+standGreenImage.src = "./img/standGreen.png";
 // After hit pictures
 let standImagePain = document.createElement("img");
-standImagePain.src = "./img/standPain1.png/";
+standImagePain.src = "./img/standPain1.png";
 let standBlueImagePain = document.createElement("img");
-standBlueImagePain.src = "./img/standPain3.png/";
+standBlueImagePain.src = "./img/standPain3.png";
 let standRedImagePain = document.createElement("img");
-standRedImagePain.src = "./img/standPain2.png/";
+standRedImagePain.src = "./img/standPain2.png";
 let standGreenImagePain = document.createElement("img");
-standGreenImagePain.src = "./img/standPain4.png/";
+standGreenImagePain.src = "./img/standPain4.png";
 
 export default class Enemy {
     constructor(x, y) {
